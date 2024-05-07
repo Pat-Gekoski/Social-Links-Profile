@@ -1,0 +1,72 @@
+.card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 4rem;
+	background-color: $card-bg;
+	border-radius: 1.2rem;
+	font-family: "Inter", san-serif;
+	min-width: 32.7rem;
+
+	@media only screen and (max-width: 450px) {
+		padding: 2.4rem;
+	}
+
+	&__avatar {
+		display: block;
+		width: 8.8rem;
+		height: 8.8rem;
+		border-radius: 50%;
+		margin-bottom: 2.4rem;
+	}
+
+	&__name {
+		font-size: 2.4rem;
+		color: #fff;
+		margin-bottom: .6rem;
+	}
+
+	&__location {
+		font-size: 1.4rem;
+		font-weight: bold;
+		color: $highlight;
+		margin-bottom: 2.4rem;
+	}
+
+	&__tagline {
+		color: #fff;
+		font-size: 1.4rem;
+		margin-bottom: 2.4rem;
+	}
+
+	&__button-container {
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+		width: 100%;
+	}
+
+	&__button {
+		height: 4.5rem;
+		border-radius: .8rem;
+		padding: 1.2rem;
+		background-color: $button-bg;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 30.4rem;
+		color: #fff;
+		font-size: 14px;
+		font-weight: bold;
+		cursor: pointer;
+
+		&:hover {
+			background-color: $highlight;
+			color: #000;
+		}
+
+		@media only screen and (max-width: 450px) {
+			width: 27.9rem;
+		}
+	}
+}
